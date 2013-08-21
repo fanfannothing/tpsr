@@ -5,8 +5,8 @@
 
 import sys
 
-from zxdb.tool import *
-from zxdb.arg import *
+#from zxdb.tool import *
+#from zxdb.arg import *
 
 class TrieNode:
     def __init__(self, ch):

@@ -22,6 +22,12 @@ class TextSpan(object):
     def sort_key(self): 
         return (self.__begin, -self.__end)
 
+def sort_text_span(span_list):
+    return sorted(span_list, key=lambda x:x.sort_key())
+
+def is_A_in_B(span_a, span_b):
+    return span_a.begin>=span_b.begin and span_a.end<=span_b.end
+
 class TextObject(object):
     def __init__(self, text):
         self.__text = text
